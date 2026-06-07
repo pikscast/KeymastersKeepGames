@@ -1,4 +1,4 @@
-Keymaster's Keep implementations made by me, Pikscast! If you have any questions or anything breaks, contact me on Discord (nepeta_leijon)
+Keymaster's Keep implementations made by me, Pikscast! If you have any questions or anything breaks, contact me on Discord `nepeta_leijon`
 
 # Call of Duty: Black Ops 7
 Version 2 (6/5/2026)
