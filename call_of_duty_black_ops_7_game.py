@@ -56,6 +56,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=3,
             ),
             GameObjectiveTemplate(
                 label="Win a match of GAMEMODE",
@@ -64,6 +65,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="Get 10 kills with WEAPON",
@@ -72,6 +74,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=3,
             ),
             GameObjectiveTemplate(
                 label="Get 10 METHOD kills",
@@ -80,6 +83,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="Deploy SCORESTREAK",
@@ -88,6 +92,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="Deploy SCORESTREAK",
@@ -96,6 +101,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=True,
+                weight=1,
             ),
             GameObjectiveTemplate(
                 label="Use FIELDUPGRADE 3 times",
@@ -104,6 +110,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="Complete a match on MAP",
@@ -112,18 +119,21 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=True,
                 is_difficult=False,
+                weight=3,
             ),
             GameObjectiveTemplate(
                 label="Capture 5 Objectives",
                 data=dict(),
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="Appear in Top 3",
                 data=dict(),
                 is_time_consuming=False,
                 is_difficult=True,
+                weight=1
             ),
         ]
 
@@ -136,6 +146,7 @@ class CallOfDutyBlackOps7Game(Game):
                     },
                     is_time_consuming=False,
                     is_difficult=False,
+                    weight=3,
                 ),
             )
 
@@ -148,6 +159,7 @@ class CallOfDutyBlackOps7Game(Game):
                     },
                     is_time_consuming=False,
                     is_difficult=False,
+                    weight=2,
                 ),
             )
             objectives.append(
@@ -158,6 +170,7 @@ class CallOfDutyBlackOps7Game(Game):
                     },
                     is_time_consuming=False,
                     is_difficult=False,
+                    weight=2,
                 ),
             )
 
@@ -173,6 +186,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="Exfil on round ROUND on MAP in Cursed Mode",
@@ -182,6 +196,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=True,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="Complete 5 TEDD Tasks on MAP",
@@ -190,6 +205,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=3,
             ),
             GameObjectiveTemplate(
                 label="Reach round 20 on MAP while CHALLENGE",
@@ -199,6 +215,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=True,
+                weight=3,
             ),
             GameObjectiveTemplate(
                 label="Complete Main Quest on MAP",
@@ -207,14 +224,25 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=True,
                 is_difficult=True,
+                weight=1,
             ),
             GameObjectiveTemplate(
-                label="Complete any side easter egg on MAP",
+                label="Complete character quest on MAP",
+                data={
+                    "MAP": (self.maps_standard, 1),
+                },
+                is_time_consuming=True,
+                is_difficult=False,
+                weight=1,
+            ),
+            GameObjectiveTemplate(
+                label="Trigger secret song on MAP",
                 data={
                     "MAP": (self.maps_standard, 1),
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="Kill 200 zombies with WEAPON",
@@ -223,6 +251,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=3,
             ),
             GameObjectiveTemplate(
                 label="Kill 200 zombies with WONDERWEAPON",
@@ -231,6 +260,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=True,
                 is_difficult=False,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="Upgrade WEAPON to Legendary rarity",
@@ -239,6 +269,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=3,
             ),
             GameObjectiveTemplate(
                 label="Use the Pack-A-Punch to upgrade WEAPON to Tier III",
@@ -247,6 +278,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=3,
             ),
             GameObjectiveTemplate(
                 label="Use the Pack-A-Punch to upgrade WONDERWEAPON to Tier III",
@@ -255,6 +287,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=True,
                 is_difficult=False,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="Get 100 METHOD kills on zombies",
@@ -263,6 +296,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="Use FIELDUPGRADE 5 times",
@@ -271,6 +305,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="Kill ELITEZOMBIE with WEAPON",
@@ -280,6 +315,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
+                weight=3,
             ),
             GameObjectiveTemplate(
                 label="Reach round 20 on MAP in Starting Room mode",
@@ -288,6 +324,7 @@ class CallOfDutyBlackOps7Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=True,
+                weight=2,
             ),
         ]
 
@@ -300,6 +337,7 @@ class CallOfDutyBlackOps7Game(Game):
                     },
                     is_time_consuming=False,
                     is_difficult=False,
+                    weight=3,
                 ),
             )
             objectives.append(
@@ -310,6 +348,7 @@ class CallOfDutyBlackOps7Game(Game):
                     },
                     is_time_consuming=False,
                     is_difficult=False,
+                    weight=3,
                 ),
             )
             objectives.append(
@@ -320,6 +359,7 @@ class CallOfDutyBlackOps7Game(Game):
                     },
                     is_time_consuming=False,
                     is_difficult=False,
+                    weight=3,
                 ),
             )
             objectives.append(
@@ -331,6 +371,7 @@ class CallOfDutyBlackOps7Game(Game):
                     },
                     is_time_consuming=False,
                     is_difficult=False,
+                    weight=3,
                 ),
             )
 
@@ -437,8 +478,11 @@ class CallOfDutyBlackOps7Game(Game):
             "H311-SAW",
             "Katana",
             "CBRS-3",
-            "KRS-7.62"
-            "Grimhawk"
+            "KRS-7.62",
+            "Grimhawk",
+            "VX Compact",
+            "AN-94",
+            "Executioner's Duet",
         ]
 
     @staticmethod
@@ -486,6 +530,7 @@ class CallOfDutyBlackOps7Game(Game):
             "Strategic Bomber",
             "Grim Reaper",
             "Watchdog Helo",
+            "Iron Rain",
         ]
 
     @staticmethod
@@ -560,6 +605,7 @@ class CallOfDutyBlackOps7Game(Game):
             "Mars",
             "Ashwood",
             "Nuked",
+            "Kowakujō",
         ]
 
     @staticmethod
@@ -569,19 +615,21 @@ class CallOfDutyBlackOps7Game(Game):
             "Astra Malorum",
             "Paradox Junction",
             "Totenreich",
+            "Kowakujō",
         ]
 
     @staticmethod
     def challenges() -> List[str]:
         return [
             "using no GobbleGums",
-            "not upgrading any weapons",
+            "not increasing a weapons' rarity",
             "not buying any perks",
-            "not downing",
+            "not being downed",
             "using only melee",
             "not using the Pack-A-Punch",
             "not upgrading your armor",
             "having a Cursed Relic enabled",
+            "not using equipment",
         ]
 
     @staticmethod
@@ -593,6 +641,7 @@ class CallOfDutyBlackOps7Game(Game):
             "LGM-1",
             "Blundergat",
             "Jotunn Star",
+            "Nekomancer",
         ]
 
     @staticmethod
@@ -602,6 +651,7 @@ class CallOfDutyBlackOps7Game(Game):
             "UBER Klaus",
             "Necropincer",
             "Shock Mimic",
+            "Oni",
         ]
         
     @staticmethod
@@ -649,6 +699,8 @@ class CallOfDutyBlackOps7Game(Game):
             "Utopia",
             "Vertigo",
             "Yakei",
+            "Zenith",
+            "Launch",
         ]
 
 # Archipelago Options
