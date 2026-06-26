@@ -1,7 +1,7 @@
 Keymaster's Keep implementations made by me, Pikscast! If you have any questions or anything breaks, contact me on Discord `nepeta_leijon`
 
 # Call of Duty: Black Ops 7
-Version 2 (6/5/2026)
+Version 3 (6/25/2026)
 
 **Options**
 
